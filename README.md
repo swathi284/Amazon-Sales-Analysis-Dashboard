@@ -30,7 +30,6 @@ Interactive Tableau dashboard analyzing Amazon sales data: revenue trends, top p
 - [How to Use](#how-to-use)
 - [Recommendations](#recommendations)
 - [Future Enhancements](#future-enhancements)
-- [Author](#author)
 
 ---
 
