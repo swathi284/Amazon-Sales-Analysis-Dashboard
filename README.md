@@ -12,8 +12,6 @@ Interactive Tableau dashboard analyzing Amazon sales data: revenue trends, top p
 ![Business Intelligence](https://img.shields.io/badge/Business%20Intelligence-FF9900?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-[**View Live Dashboard on Tableau Public**](https://public.tableau.com/your-link-here)
-
 </div>
 
 ---
