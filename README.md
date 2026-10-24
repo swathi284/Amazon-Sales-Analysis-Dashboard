@@ -68,7 +68,7 @@ Each page includes interactive filters (Region, Country, Order Priority, Item Ty
 
 | Page 1 – Homepage | Page 2 – Executives Page |
 |:---:|:---:|
-| ![Homepage](images/01_homepage.png) | ![Executives Page](images/02_executives_page.png) |
+| ![Homepage](01_homepage.png) | ![Executives Page](images/02_executives_page.png) |
  
 | Page 3 – Revenue Analysis | Page 4 – Item Analysis |
 |:---:|:---:|
