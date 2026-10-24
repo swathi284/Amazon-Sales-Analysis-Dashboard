@@ -1,14 +1,11 @@
-# Amazon-Sales-Analysis-Dashboard
-Interactive Tableau dashboard analyzing Amazon sales data: revenue trends, top products and categories, regional performance, and customer ratings.
-
 <div align="center">
 
-# Amazon Sales Analysis Dashboard
+# Amazon Sales Analytics Dashboard
 
-### An interactive Tableau dashboard for global sales, profit, and logistics performance
+**An interactive, multi-page Tableau dashboard that turns raw sales records into clear, actionable business insights.**
 
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis-232F3E?style=for-the-badge)
+![Data Visualization](https://img.shields.io/badge/Data%20Visualization-232F3E?style=for-the-badge)
 ![Business Intelligence](https://img.shields.io/badge/Business%20Intelligence-FF9900?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
@@ -19,163 +16,223 @@ Interactive Tableau dashboard analyzing Amazon sales data: revenue trends, top p
 ## Table of Contents
 
 - [Overview](#overview)
-- [Dashboard Preview](#dashboard-preview)
 - [Business Objectives](#business-objectives)
-- [Key Performance Indicators](#key-performance-indicators)
-- [Dashboard Features](#dashboard-features)
+- [Dashboard Preview](#dashboard-preview)
+- [Dashboard Walkthrough](#dashboard-walkthrough)
 - [Key Insights](#key-insights)
-- [Dataset](#dataset)
-- [Tools and Techniques](#tools-and-techniques)
-- [Repository Structure](#repository-structure)
-- [How to Use](#how-to-use)
 - [Recommendations](#recommendations)
+- [Dataset](#dataset)
+- [Tools & Technologies](#tools--technologies)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
 - [Future Enhancements](#future-enhancements)
+- [License](#license)
 
 ---
 
 ## Overview
 
-This project presents an end-to-end sales analysis of Amazon retail data, built as an interactive, multi-page Tableau dashboard. It consolidates revenue, profit, shipment performance, and unit sales into a single view, allowing stakeholders to move from a high-level summary down to region and country detail in a few clicks.
+This project presents an end-to-end **sales performance analysis** built in **Tableau**. The dashboard is organised as a four-page guided story, moving from a high-level company snapshot to executive-level trends, then to revenue and fulfilment analysis, and finally to product-level performance.
 
-The homepage provides an executive summary through KPI cards, a region-wise profit ranking, and a country-level profit map, with navigation to deeper analysis pages.
+Each page includes interactive filters (Region, Country, Order Priority, Item Type) and page-to-page navigation buttons, so stakeholders can explore the data without any technical background.
 
----
+### Headline Metrics
 
-## Dashboard Preview
-
-<img width="800" height="545" alt="Amazon_sales_Dashboard_Preview" src="https://github.com/user-attachments/assets/790a7af7-691a-4851-b26c-43f9470c3326" />
-
-
-> Region and country filters, click-to-filter charts, and map tooltips work across the dashboard.
+| Metric | Value |
+|---|---|
+| **Total Revenue** | $2,409.7M |
+| **Total Profit** | $797.1M |
+| **Overall Profit Margin** | ~33.1% |
+| **Units Sold** | 9.1M |
+| **Average Shipment Days** | 24.31 |
 
 ---
 
 ## Business Objectives
 
-1. Measure overall business performance through revenue, profit, and units sold.
-2. Identify the highest and lowest performing regions and countries by profit.
-3. Monitor logistics efficiency through average shipment days.
-4. Enable self-service exploration with interactive filters and dashboard actions.
-5. Support data-driven decisions on inventory, pricing, and regional strategy.
+- Monitor overall **revenue, cost, and profitability** at a glance.
+- Identify the **highest and lowest performing regions and countries**.
+- Compare **online vs. offline** sales channel contribution.
+- Track **order volume and cost trends** from 2010 to 2017.
+- Evaluate the relationship between **shipment time and revenue**.
+- Determine which **product categories** drive revenue, cost, profit, and order volume.
 
 ---
 
-## Key Performance Indicators
+## Dashboard Preview
 
-| KPI | Value | Description |
-|-----|-------|-------------|
-| **Total Revenue** | $691.1M | Total sales value across all orders |
-| **Total Profit** | $225.4M | Net profit generated |
-| **Average Shipment Days** | 20.67 | Mean time from order to shipment |
-| **Units Sold** | 3.1M | Total quantity of items sold |
+<img width="800" height="545" alt="Amazon_sales_Dashboard_Preview" src="https://github.com/user-attachments/assets/d8f71714-0bd9-4b32-b4e4-221d8ca43896" />
+
+
+> **Note:** Place your screenshots in an `images/` folder and keep the file names below (or update the paths).
+
+| Page 1 – Homepage | Page 2 – Executives Page |
+|:---:|:---:|
+| ![Homepage](<img width="606" height="395" alt="Screenshot 2026-10-24 122226" src="https://github.com/user-attachments/assets/cee9e778-f6a7-41be-babe-5221d3bdbadf" />
+) | ![Executives Page](<img width="619" height="402" alt="Screenshot 2026-10-24 122309" src="https://github.com/user-attachments/assets/6418e186-ef21-487b-bfb2-97199d915df6" />
+) |
+
+| Page 3 – Revenue Analysis | Page 4 – Item Analysis |
+|:---:|:---:|
+| ![Revenue Analysis](<img width="616" height="400" alt="Screenshot 2026-10-24 122331" src="https://github.com/user-attachments/assets/78e2df5e-1c4a-4bcd-a319-476133f5e4de" />
+) | ![Item Analysis](<img width="611" height="398" alt="Screenshot 2026-10-24 122343" src="https://github.com/user-attachments/assets/65b68aba-695b-43f6-9e05-c197b3f7ffaa" />
+) |
 
 ---
 
-## Dashboard Features
+## Dashboard Walkthrough
 
-**Homepage**
-- **KPI cards** summarizing revenue, profit, shipment days, and units sold
-- **Region-wise Profit** bar chart, ranked from highest to lowest
-- **Country-wise Profit** map with profit labels and detailed tooltips
-- **Global filters** for Region and Country, plus a search control
-- **Page navigation** via the "Next" button to move through the dashboard
+### 1. Homepage – Company Snapshot
+A summary view with four KPI cards (Total Profit, Total Revenue, Average Shipment Days, Units Sold).
 
-**Interactivity**
-- Click any region to filter the map and KPIs (dashboard actions)
-- Hover tooltips with exact profit values and a Keep Only / Exclude option
-- Multi-select filters for flexible comparisons
-- Consistent branding and layout for an executive-ready look
+- **Region-wise Profit:** Ranked bar chart comparing profit across all regions.
+- **Country-wise Profit:** Interactive geographic map with profit by country.
+- **Filters:** Region and Country.
+
+### 2. Executives Page – Strategic Overview
+Designed for leadership-level decision making.
+
+- **Sales Channel Analysis:** Online vs. Offline revenue split.
+- **Orders per Year:** Order volume trend from 2010 to 2017.
+- **Priority-wise Orders:** Distribution across Critical, High, Medium, and Low priorities.
+- **Total Cost per Year:** Annual cost trend.
+- **Filters:** Region and Order Priority.
+
+### 3. Revenue Analysis – Revenue vs. Shipment Time
+A dual-axis view comparing **Total Revenue** and **Average Shipping Days** by year, with a dedicated insights panel.
+
+- **Filter:** Region.
+
+### 4. Item Analysis – Product Performance
+Four ranked bar charts comparing every item type:
+
+- **Revenue Split**
+- **Cost Split**
+- **Profit Split**
+- **Order Split**
+- **Filter:** Item Type.
 
 ---
 
 ## Key Insights
 
-- **Sub-Saharan Africa** is the highest-profit region, followed by **Europe** and **Middle East and North Africa**.
-- **India** and **North America** contribute the least profit among the listed regions, signalling room for growth or a review of cost structure.
-- Profit is concentrated in a few regions, so regional performance varies widely.
-- Average shipment time of roughly **21 days** is an opportunity area for logistics optimization.
-- [Add insight on top countries, e.g. "Country X leads with $Y profit"]
-- [Add insight on products, sales channels, or trends over time if covered in other pages]
+### Financial Performance
+- The business generated **$2,409.7M in revenue** against **$1,612.6M in total cost**, resulting in **$797.1M profit** (~33% margin).
+- **Revenue peaked in 2012 at $555.39M** and declined to **$152.41M by 2017**.
+- **Total cost peaked in 2012 at $389.59M** and fell to roughly **$101.80M by 2017**, tracking the decline in revenue.
 
----
+### Sales Channel
+- **Offline sales lead with $1,425.39M (~59%)**, compared with **$984.28M (~41%)** for online.
 
-## Dataset
+### Orders & Priority
+- Order volume rose from **144 (2010)** to a peak of **405 (2012)**, then trended down to **90 in 2017**.
+- **High-priority orders are the largest group (522)**, followed by Low (477), Critical (378), and Medium (333).
 
-| Attribute | Details |
-|-----------|---------|
-| **Source** | [Kaggle / Company data / other] |
-| **Records** | [number] rows |
-| **Time Period** | [start date] to [end date] |
-| **Key Fields** | Region, Country, Item Type, Order Date, Ship Date, Units Sold, Unit Price, Unit Cost, Total Revenue, Total Cost, Total Profit |
+### Regional Performance
+- **Sub-Saharan Africa** is the most profitable region, followed by **Europe** and **Middle East & North Africa**.
+- **India** and **North America** contribute the lowest profit.
 
-**Data preparation**
-- Checked for missing values, duplicates, and inconsistent formatting
-- Standardized region and country names for accurate map plotting
-- Created a shipment days field from order date and ship date
-- Validated totals against the source data
+### Shipment & Revenue
+- Average shipping time ranged from **18.9 to 26.9 days** over the period.
+- The strongest revenue year (2012) coincided with one of the shortest average shipping times (**22.5 days**), supporting the dashboard's finding that delivery speed is linked to revenue performance.
 
----
-
-## Tools and Techniques
-
-- **Tableau Desktop / Tableau Public** for dashboard design and publishing
-- **Calculated fields** for Average Shipment Days and profit metrics
-- **Filters and parameters** for interactive exploration
-- **Dashboard actions** for cross-chart filtering
-- **Maps (Mapbox)** for geographic profit visualization
-- **Custom layout containers** and navigation buttons for a polished UI
-
----
-
-## Repository Structure
-
-```
-Amazon-Sales-Analysis-Tableau-Dashboard/
-│
-├── Data/
-│   └── Amazon_Sales_Data.csv
-│
-├── Dashboard/
-│   └── Amazon_Sales_Dashboard.twbx
-│
-├── Images/
-│   └── Amazon_Dashboard_Preview.gif
-│
-└── README.md
-```
-
----
-
-## How to Use
-
-1. **Clone or download** this repository.
-   ```bash
-   git clone https://github.com/your-username/Amazon-Sales-Analysis-Tableau-Dashboard.git
-   ```
-2. Open `Amazon_Sales_Dashboard.twbx` in **Tableau Desktop** or **Tableau Public** (free).
-3. Use the **Region** and **Country** filters at the top to narrow the view.
-4. Click a bar in the Region-wise Profit chart to filter the map and KPIs.
-5. Use the **Next** button to navigate to the other dashboard pages.
-
+### Product Performance
+- **Cosmetics is the clear leader** across every measure: **$724.38M revenue, $436.30M cost, $288.08M profit, and 261 orders**.
+- **Household ($116.51M)** and **Clothes ($101.45M)** follow in profit contribution.
+- **Fruits, Meat, and Snacks** are the lowest-contributing categories by profit.
 
 ---
 
 ## Recommendations
 
-- **Double down on top regions:** Prioritize inventory and marketing investment in the highest-profit regions.
-- **Investigate low-profit regions:** Review pricing, costs, and demand in regions such as India and North America to unlock growth.
-- **Reduce shipment time:** Target the 20+ day average through warehouse placement, carrier optimization, or regional fulfilment.
-- **Monitor profit concentration:** Diversify across regions to reduce dependence on a few markets.
+1. **Prioritise Cosmetics** – It drives the largest share of revenue and profit; protect supply, inventory, and marketing investment here.
+2. **Reduce shipment times** – Faster fulfilment is associated with stronger revenue periods; review logistics in slower-shipping periods and regions.
+3. **Strengthen the online channel** – Online trails offline by roughly $441M, which indicates room for growth.
+4. **Investigate the post-2012 decline** – Orders, revenue, and cost all fell sharply; a root-cause analysis (demand, pricing, market changes) is recommended.
+5. **Review low-margin categories** – Evaluate whether low-profit items (e.g., Fruits, Meat, Snacks) justify their operational cost.
+6. **Expand in high-profit regions** – Double down on Sub-Saharan Africa and Europe while building a targeted growth plan for India and North America.
+
+---
+
+## Dataset
+
+The analysis is based on a sales records dataset containing order-level transactions.
+
+| Field | Description |
+|---|---|
+| Region / Country | Geographic location of the sale |
+| Item Type | Product category |
+| Sales Channel | Online or Offline |
+| Order Priority | Critical, High, Medium, Low |
+| Order Date / Ship Date | Order and shipment dates |
+| Units Sold | Quantity sold |
+| Unit Price / Unit Cost | Price and cost per unit |
+| Total Revenue / Total Cost / Total Profit | Calculated financial measures |
+
+> **Data source:** _Add the dataset link or description here (e.g., Kaggle, internal export)._
+
+---
+
+## Tools & Technologies
+
+| Category | Tool |
+|---|---|
+| Visualization & BI | Tableau |
+| Mapping | Tableau Maps (Mapbox / OpenStreetMap) |
+| Data Preparation | Excel / CSV |
+| Version Control | Git & GitHub |
+
+### Tableau Features Used
+Calculated fields, interactive filters, dashboard actions, page navigation buttons, dual-axis charts, geographic maps, sorted bar charts, and custom KPI cards.
+
+---
+
+## Project Structure
+
+```
+amazon-sales-dashboard/
+│
+├── data/
+│   └── amazon_sales.csv
+│
+├── images/
+│   ├── 01_homepage.png
+│   ├── 02_executives_page.png
+│   ├── 03_revenue_analysis.png
+│   └── 04_item_analysis.png
+│
+├── Amazon_Sales_Dashboard.twbx
+└── README.md
+```
+
+---
+
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<swathi284>/Amazon-Sales-Analysis-Dashboard.git
+   ```
+2. **Open the workbook** `Amazon_Sales_Dashboard.twbx` in **Tableau Desktop** or **Tableau Public**.
+3. **Explore the dashboard** using the filters and the *Previous / Next* buttons to navigate between pages.
+
+> **Live dashboard:** _Add your Tableau Public link here._
 
 ---
 
 ## Future Enhancements
 
-- Add product category and sales channel analysis pages
-- Include time-series trends and year-over-year comparisons
-- Add profit margin and forecasting views
-- Build a matching Power BI version for comparison
-- Add customer segmentation analysis
+- Add **forecasting** to project revenue and order trends.
+- Include **year-over-year growth** and profit margin KPIs.
+- Add **customer segmentation** and **delivery performance** analysis.
+- Build a **mobile-optimised** dashboard layout.
+- Automate data refresh through a live database connection.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
