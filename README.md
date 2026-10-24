@@ -43,7 +43,7 @@ The homepage provides an executive summary through KPI cards, a region-wise prof
 
 ## Dashboard Preview
 
-<img width="800" height="545" alt="Amazon_Dashboard_Preview" src="https://github.com/user-attachments/assets/3b42e5df-48ba-43a4-975a-3d3450242850" />
+<img width="800" height="545" alt="Amazon_sales_Dashboard_Preview" src="https://github.com/user-attachments/assets/790a7af7-691a-4851-b26c-43f9470c3326" />
 
 
 > Region and country filters, click-to-filter charts, and map tooltips work across the dashboard.
