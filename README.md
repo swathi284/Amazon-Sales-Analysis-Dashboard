@@ -68,15 +68,11 @@ Each page includes interactive filters (Region, Country, Order Priority, Item Ty
 
 | Page 1 – Homepage | Page 2 – Executives Page |
 |:---:|:---:|
-(<img width="606" height="395" alt="Screenshot 2026-10-24 122226" src="https://github.com/user-attachments/assets/cee9e778-f6a7-41be-babe-5221d3bdbadf" />
-(<img width="619" height="402" alt="Screenshot 2026-10-24 122309" src="https://github.com/user-attachments/assets/6418e186-ef21-487b-bfb2-97199d915df6" />
-) |
-
+| ![Homepage](images/01_homepage.png) | ![Executives Page](images/02_executives_page.png) |
+ 
 | Page 3 – Revenue Analysis | Page 4 – Item Analysis |
 |:---:|:---:|
-| ![Revenue Analysis](<img width="616" height="400" alt="Screenshot 2026-10-24 122331" src="https://github.com/user-attachments/assets/78e2df5e-1c4a-4bcd-a319-476133f5e4de" />
-) | ![Item Analysis](<img width="611" height="398" alt="Screenshot 2026-10-24 122343" src="https://github.com/user-attachments/assets/65b68aba-695b-43f6-9e05-c197b3f7ffaa" />
-) |
+| ![Revenue Analysis](images/03_revenue_analysis.png) | ![Item Analysis](images/04_item_analysis.png) |
 
 ---
 
